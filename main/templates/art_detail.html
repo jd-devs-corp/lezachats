@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}{{ article.titre_slug }} {% endblock title %}
+{% block content %}
+    {% load static %}
+    <link rel='stylesheet' href='{% static "new/css/detail.css" %}'>
+    {% comment %}<div class="product">
+        <div class="product-image">
+            <img src="{{ article.image.url }}" alt="Image du produit">
+        </div>
+        <div class="product-info">
+            <h2>{{ article.nom }}</h2>
+            <p>Prix : {{ article.prix }} Fcfa</p>
+            <p>Vendeur : <a href='{% url "profile_page" article.auteur.profile.id %}'>{{ article.auteur }} </a></p>
+            <p>Description : {{ article.corps }}</p>
+            <form action='{% url "like_art" article.pk %}' method="article">
+                {% if user.is_authenticated %}
+                    {% csrf_token %}
+
+
+                    {% if liked %}
+                        <button type='submit' name='article_id' value='{{ article.id }}'
+                                class="btn btn-danger btn-sm">Unlike
+                        </button> -
+                    {% else %}
+                        <button type='submit' name='article_id' value='{{ article.id }}'
+                                class="btn btn-primary btn-sm">Like
+                        </button> -
+                    {% endif %}
+                {% endif %}
+                {{ total_likes }} like(s)
+            </form>
+            <p><a href='https://wa.me/{{ article.auteur.profile.numero_de_telephone }}' class='btn btn-primary'
+                  target="_blank">Contacter le vendeur</a></p>
+        </div>
+    </div>{% endcomment %}
+    <div class="row gx-4 gx-lg-5 align-items-center">
+        <div class="col-md-6">
+            <img
+                    class="card-img-top object-fit-cover mb-md-0"
+                    src="{{ article.image.url }}"
+                    alt="{{ article.corps }}"
+            />
+        </div>
+        <div class="col-md-6">
+            <div class="small mb-1">Mis en ligne le : <span class="">{{ article.date }}</span></div>
+            <h1 class="display-5 fw-bolder text-black">{{ article.nom }}</h1>
+            <div class="fs-5 mb-5 mt-3">
+                <span class="font-monospace">Prix du produit :</span>
+                <span class="font-monospace">{{ article.prix }} (en fcfa)</span>
+            </div>
+            <div class="fs-5 mb-5 mt-3">
+                <span class="font-monospace">Vendeur :</span>
+                <span class="font-monospace"><a class="btn btn-info" href="{% url 'profile_page'  article.auteur.profile.id %}">{{ article.auteur }}</a></span>
+            </div>
+            <p class="lead  text-reset text-break d-inline-block " style="font-size: smaller; font-family: auto,sans-serif;">
+                {{ article.corps }}
+            </p>
+            <div class="d-flex">
+                <form action='{% url "like_art" article.pk %}' method="article">
+                    {% if user.is_authenticated %}
+                        {% csrf_token %}
+
+                        {% if liked %}
+                            <button type='submit' name='article_id' value='{{ article.id }}'
+                                    >
+                                <i class="bi bi-heart-fill"></i> <sup>{{ total_likes }}</sup>
+                            </button>
+                        {% else %}
+                            <button type='submit' name='article_id' value='{{ article.id }}'
+                                    >
+                                <i class="bi bi-heart"></i> <sup>{{ total_likes }}</sup>
+                            </button>
+                        {% endif %}
+                    {% endif %}
+
+                </form>
+            </div>
+        <a class="btn btn-link " href="https://wa.me/{{ article.auteur.profile.numero_de_telephone }}?text=Salut+{{ article.auteur }}+je+viens+concernant+le+produit+{{ article.nom }}+que+vous+avez+mis+en+ligne+sur+la+plateforme+*LEZACHATS* " target="_blank">Entrer en contact</a>
+        </div>
+    </div>
+    <br/>
+
+{% endblock content %}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css">
+
+    <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
+    <script src="{% static 'css/fontawesone.css' %}" crossorigin="anonymous"></script>
+    {% comment %}<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">{% endcomment %}
+    <link rel="icon" href="/media/Logo.png">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+            rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../static/js/header.js"></script>
+    <style>
+        .custom-link {
+            color: #1a1d20;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <title>{% block title %}Blog Site{% endblock title %}</title>
+</head>
+<body>
+<header>
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small> Iut De Douala, Ndong-bong, Cameroun</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Lun - Sam: 09:00 - 07:00 </small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small><a href="tel:+237682786315">+(237) 6 82 78 63 15</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button aria-expanded="false"
+                aria-label="Toggle theme (auto)"
+                class="btn btn-light py-2 dropdown-toggle d-flex align-items-center rounded"
+                data-bs-toggle="dropdown"
+                id="bd-theme"
+                type="button">
+            <svg class="bi my-1 theme-icon-active" height="1em" width="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul aria-labelledby="bd-theme-text" class="dropdown-menu dropdown-menu-end shadow">
+            <li>
+                <button aria-pressed="false" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                        type="button">
+                    <svg class="bi me-2 opacity-50 theme-icon" height="1em" width="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" height="1em" width="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button aria-pressed="false" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                        type="button">
+                    <svg class="bi me-2 opacity-50 theme-icon" height="1em" width="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" height="1em" width="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button aria-pressed="true" class="dropdown-item d-flex align-items-center active"
+                        data-bs-theme-value="auto"
+                        type="button">
+                    <svg class="bi me-2 opacity-50 theme-icon" height="1em" width="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" height="1em" width="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-dark-subtle text-bg-dark navbar-dark sticky-top p-0">
+        <a href="" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><img src="/media/Logo-removebg-preview.png" alt="logo lezachats" width="37%">
+            </h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0 text-black">
+
+                <a href="{% url "home" %}" class="nav-item nav-link custom-link">Accueil</a>
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                        <a href="{% url "admin:index" %}" class="nav-item nav-link custom-link">Administrateur</a>
+                        <a href="{% url "add_cat" %}" class="nav-item nav-link custom-link">Ajout d'une Catégorie</a>
+                        <a href="{% url "verif" %}" class="nav-item nav-link custom-link">Attente</a>
+                        <a href="{% url "profile_page" user.profile.id %}" class="nav-item nav-link custom-link">Compte</a>
+                        <a href="{% url "logout"  %}" class="nav-item nav-link custom-link">Déconnexion</a>
+                    {% else %}
+                        <a href="{% url "add_art" %}" class="nav-item nav-link custom-link">Ajouter un article</a>
+                        <a href="{% url "profile_page" user.profile.id %}" class="nav-item nav-link custom-link">Compte</a>
+                        <a href="{% url "logout"  %}" class="nav-item nav-link custom-link">Déconnexion</a>
+                    {% endif %}
+                {% else %}
+                    <a href="{% url "register" %}" class="nav-item nav-link custom-link">inscrire</a>
+                    <a href="{% url "login" %}" class="nav-item nav-link custom-link">Connexion</a>
+                    <a href="#" class="nav-item nav-link custom-link">Service</a>
+                {% endif %}
+
+                <a href="#" class="nav-item nav-link custom-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    {% comment %} <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+
+        <div class="container-fluid ">
+
+            <a class="navbar-brand " href="{% url "home" %}">LeZachats</a>
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse "
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent "
+                    aria-expanded="false " aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    {% if  user.is_authenticated %}
+                        {% if user.is_staff %}
+                            <li class="nav-item ">
+                                <a class="nav-link active " aria-current="page "
+                                   href=" {% url "admin:index" %}">Admin</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active " aria-current="page " href=" {% url "add_cat" %}">Ajouter une
+                                    categorie</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active " aria-current="page " href=" {% url "verif" %}">Fil
+                                    d'attente</a>
+                            </li>
+                        {% endif %}
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page " href=" {% url "add_art" %}">Ajouter un
+                                article</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page " href=" {% url "profile_page" user.id %}">Mon
+                                profil </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page " href=" {% url "logout" %}">Se
+                                deconnecter</a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page " href=" {% url "register" %}">S'inscrire</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page " href=" {% url "login" %}">Se connecter</a>
+                        </li>
+
+                    {% endif %}
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>{% endcomment %}
+</header>
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</section>
+
+<footer id="Footer" class="page-footer font-small stylish-color-dark pt-4">
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <!-- Content -->
+                <h5 class="text-uppercase font-weight-bold mt-3 mb-4">À propos de notre site web</h5>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                <p>Lezachats est un site web developper par un groupe d'etudiant en DUT à l'institut universitaire de
+                    Douala (IUT) .</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Produits</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+
+                <p>
+                    <a href="#!">À propos</a>
+                </p>
+
+                <p>
+                    <a href="#!">Services</a>
+                </p>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Lien utile</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                <p>
+                    <a href="{% url 'login' %}">Mon compte</a>
+                </p>
+
+                <p>
+                    <a href="#!">Aide</a>
+                </p>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <i class="fas fa-home mr-3"></i> Douala, Cameroun</p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i><a href="mailto:cm.lezachats@gmail.com" target="_blank">cm.lezachats@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> + 237 6 8278 6315</p>
+                <p>
+                    <i class="fas fa-print mr-3"></i> + 237 6 9401 0263</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <h5 class="mb-1">Commencez gratuitement</h5>
+        </li>
+        <li class="list-inline-item">
+            <a href="{% url "register" %}" class="btn btn-outline-danger btn-rounded">S'inscrire</a>
+        </li>
+    </ul>
+    <hr>
+    <!-- Social buttons -->
+    <div class="hover-effect1">
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/codewithfaraz" title="Facebook"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.twitter.com/codewithfaraz" title="Twitter"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/codewithfaraz" title="Instagram"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.youtube.com/@codewithfaraz" title="Youtube"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#." title="Github"><i class="fa fa-github"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        Copyright© 2023: Lezachats
+    </div>
+</footer>
+{% load static %}
+<script src='{% static "js/bootstrap.bundle.min.js" %}'
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="{% static "js/popper.min.js" %}"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

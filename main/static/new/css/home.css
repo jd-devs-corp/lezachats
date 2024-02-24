@@ -1,0 +1,33 @@
+
+.book-panel {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book-item {
+
+/*text-align: center;*/
+
+width: 21%; /* Pour afficher deux éléments côte à côte */
+
+margin-bottom: 10px;
+
+border-radius: 1px;
+
+border: 2px solid #757070;
+
+box-shadow: 0 0 6px 7px #acaeb2;
+
+}
+.book-item-detail {
+    padding-top: 5px;
+    background: linear-gradient(24deg, black, transparent);
+}
+
+@media screen and (max-width: 768px) {
+    .book-item {
+        width: 50%; /* Pour afficher un élément par ligne sur smartphone */
+    }
+}
