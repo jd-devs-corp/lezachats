@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link href='{% static "new/css/home.css" %}' rel='stylesheet'>
+    <div class="book-panel row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-5 g-3">
+        {% for article in articles %}
+            {% if article.is_online %}
+            {% comment %} <div class="book-item row ">
+                <img width="100%"  src="{{ article.image.url }}" alt="{{ article.nom }}" class="object-fit-cover col-md-6">
+                <div class="book-item-detail">
+                    <h2 class="text-body-emphasis text-decoration-underline text-center col-md-2"
+                        style="font-family: 'Poppins', sans-serif">{{ article.nom }}</h2>
+                    <p style="font-family: 'Lucinda Grande', 'Lucinda Sans Unicode', Helvetica, Arial, Verdana, sans-serif" class="text-center mt-2 text-nowrap col-md-2">
+                        Prix: {{ article.prix }} FCFA</p>
+                    <a href="{% url "art_detail" article.id %}" class='btn btn-link mt-2 mb-4 text-right col-md-2'>Détails</a>
+                </div>
+            </div>{% endcomment %}
+            {% comment %}<div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="{{ article.image.url }}" alt="{{ article.nom }}" height="300"/>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{ article.nom }}</h5>
+                            <!-- Product price-->
+                            XAF {{ article.prix }}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                                    href="{% url "art_detail" article.id %}">voir les options</a></div>
+                    </div>
+                </div>
+            </div>{% endcomment %}
+            <style>
+                .card {
+                    max-height: 310px;
+                    border-raduis:0px;
+                }
+
+                .card:hover {
+                    height: 105%;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+
+                img {
+                    max-height: 155px;
+                    top: 0;
+                }
+            </style>
+            <div class="col mb-3">
+                <div class="card flex-fill shadow-sm d-flex  justify-content-center align-items-center">
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <img src="{{ article.image.url }} "
+                         class="card-img-top w-100 " alt="{{ article.nom }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ article.nom }}</h5>
+                        <div class="clearfix mb-3 mt-3">
+                            <span class="float-start badge mr-2  rounded-pill bg-primary ">{{ article.date }}</span>
+                            <span class="float-end price-hp">{{ article.prix }} fcfa</span>
+                        </div>
+
+                        <div class="text-center my-4">
+                            <a href="{% url "art_detail" article.id %}" class="btn btn-link">Check offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+
+        {% endfor %}
+    </div>
+
+    {% load static %}
+    <link rel='stylesheet' href='{% static "new/css/style.css" %}'>
+    <script src='{% static "new/js/index.js" %}'></script>
+{% endblock content %}
