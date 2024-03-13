@@ -1,0 +1,153 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5db0287a-856c-4517-bfdf-e536dad2dbb8\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/media/images/profile/inconnu.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/members/templates/registration/logout.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/db.sqlite3\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/db.sqlite3\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/forms.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/forms.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/templates/base.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/templates/base.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/urls.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/views.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/0ccStlB6.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/20221101_125413.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/20221101_125413_AzbU9Yw.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/20221101_125419.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/263760131_308932401235347_1368281543548152869_n.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/263760131_308932401235347_1368281543548152869_n_SzNf8Ek.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230818-WA0011.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230818-WA0011_ZGDOQ0O.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004_GeH9ZJ4.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004_PMUbR5e.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_9uMboug.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_cVVbRN0.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_mgzs9R0.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004_p5IIX8Q.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230904-WA0004_vK24RPI.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20230913-WA0026.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20231028-WA0009.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20231028-WA0009_cv2jRQ7.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20231028-WA0014.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20231028-WA0014_7n8klJ9.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20231028-WA0017.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20231028-WA0017_8oCcKHe.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/IMG-20231028-WA0017_mKiRS30.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/WIP-9th-anniversary-wallpaper-dark.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/_.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/istockphoto-1180260798-170667a_1.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/megane.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/profile/CB_Social_Content.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/profile/IMG-20230904-WA0004.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/profile/inconnu.webp\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/media/images/profile/photo_2023-01-22_01-11-13.jpg\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/members/forms.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/members/forms.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/members/templates/registration/user_profile.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/members/templates/registration/user_profile.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/members/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/members/urls.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/members/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/members/views.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"DEPENDENCY_CHECKER_PROBLEMS_TAB\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2cftCqY2H2AXyYloL6SJjTcWLH4\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.OpenDjangoStructureViewOnStart\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"last_opened_file_path\": \"C:/Users/jiord/Bureau/lezachats/media/images/profile\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\jiord\\Bureau\\lezachats\\media\\images\\profile\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"lezachats\" type=\"Python.DjangoServer\" factoryName=\"Django server\">\r\n      <module name=\"lezachats\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <option name=\"port\" value=\"8000\" />\r\n      <option name=\"host\" value=\"localhost\" />\r\n      <option name=\"additionalOptions\" value=\"\" />\r\n      <option name=\"browserUrl\" value=\"\" />\r\n      <option name=\"runTestServer\" value=\"false\" />\r\n      <option name=\"runNoReload\" value=\"false\" />\r\n      <option name=\"useCustomRunCommand\" value=\"false\" />\r\n      <option name=\"customRunCommand\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5db0287a-856c-4517-bfdf-e536dad2dbb8\" name=\"Changes\" comment=\"\" />\r\n      <created>1708514342440</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1708514342440</updated>\r\n      <workItem from=\"1708514349467\" duration=\"348000\" />\r\n      <workItem from=\"1708761458440\" duration=\"88000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f36853d24a1658d25043063bef9e17e371b77785)
++++ b/.idea/workspace.xml	(date 1710351045528)
+@@ -4,52 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="5db0287a-856c-4517-bfdf-e536dad2dbb8" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/media/images/profile/inconnu.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/members/templates/registration/logout.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    <list default="true" id="5db0287a-856c-4517-bfdf-e536dad2dbb8" name="Changes" comment="Notre projet Django">
+       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/base.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/0ccStlB6.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/20221101_125413.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/20221101_125413_AzbU9Yw.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/20221101_125419.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/263760131_308932401235347_1368281543548152869_n.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/263760131_308932401235347_1368281543548152869_n_SzNf8Ek.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230818-WA0011.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230818-WA0011_ZGDOQ0O.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_GeH9ZJ4.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_PMUbR5e.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_9uMboug.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_cVVbRN0.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_mgzs9R0.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_p5IIX8Q.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_vK24RPI.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230913-WA0026.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0009.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0009_cv2jRQ7.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0014.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0014_7n8klJ9.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017_8oCcKHe.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017_mKiRS30.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/WIP-9th-anniversary-wallpaper-dark.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/_.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/istockphoto-1180260798-170667a_1.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/megane.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/profile/CB_Social_Content.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/profile/IMG-20230904-WA0004.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/profile/inconnu.webp" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/media/images/profile/photo_2023-01-22_01-11-13.jpg" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/members/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/members/forms.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/members/templates/registration/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/members/templates/registration/user_profile.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/members/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/members/urls.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/members/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/members/views.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -80,22 +36,22 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "main",
+-    "last_opened_file_path": "C:/Users/jiord/Bureau/lezachats/media/images/profile",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiord/Bureau/lezachats/media/images/profile&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\jiord\Bureau\lezachats\media\images\profile" />
+@@ -145,9 +101,49 @@
+       <workItem from="1708514349467" duration="348000" />
+       <workItem from="1708761458440" duration="88000" />
+     </task>
++    <task id="LOCAL-00001" summary="Notre projet Django">
++      <option name="closed" value="true" />
++      <created>1710350621249</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1710350621249</updated>
++    </task>
++    <task id="LOCAL-00002" summary="Notre projet Django">
++      <option name="closed" value="true" />
++      <created>1710350813507</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1710350813507</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Notre projet Django">
++      <option name="closed" value="true" />
++      <created>1710350975864</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1710350975864</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Notre projet Django" />
++    <option name="LAST_COMMIT_MESSAGE" value="Notre projet Django" />
++  </component>
+ </project>
+\ No newline at end of file
