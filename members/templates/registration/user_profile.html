@@ -11,9 +11,15 @@
                 <div class="card">
                     <div class="rounded-top text-white d-flex flex-row" style="background-color: #000; height:200px;">
                         <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px;">
+                            {% if profile.pp %}
                             <img src="{{ profile.pp.url  }}"
                                  alt="" class="img-fluid img-thumbnail mt-4 mb-2"
                                  style="width: 150px; z-index: 1">
+                            {% else%}
+                            <img src="/media/images/profile/inconnu.jpg"
+                                 alt="" class="img-fluid img-thumbnail mt-4 mb-2"
+                                 style="width: 150px; z-index: 1">
+                            {% endif %}
                             {% if user.id == profile.id %}
                             <a href="{% url 'edit_profile' profile.id %}" type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
                                     style="z-index: 1;">
@@ -25,11 +31,15 @@
                             <h5>{{ profile.user.first_name }} {{ profile.user.last_name }}</h5>
                         </div>
                     </div>
-                    <div class="p-4 text-black" style="background-color: #f8f9fa;">
+                    <div class="card-body p-4 text-black">
+
+                        <div class="mb-5">
+                            <p class="lead fw-normal mb-1">À propos de {{ profile.user }}</p>
+                            <div class="p-4 text-black" style="background-color: #f8f9fa;">
                         <div class="d-flex justify-content-end text-center py-1">
                             <div>
                                 <p class="mb-1 h5">{{ nb_articles }}</p>
-                                <p class="small text-muted mb-0">Photos</p>
+                                <p class="small text-muted mb-0">Articles</p>
                             </div>
                             <div class="px-3">
                                 <p class="mb-1 h5">{{ nb_likes }}</p>
@@ -37,9 +47,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-body p-4 text-black">
-                        <div class="mb-5">
-                            <p class="lead fw-normal mb-1">À propos de {{ profile.user }}</p>
                             <div class="p-4" style="background-color: #f8f9fa;">
                                 <p class="font-italic mb-1">{{ profile.user.bio }}</p>
 
