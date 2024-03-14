@@ -1,41 +1,44 @@
 {% extends "base.html" %}
 {% block title %}Inscription{% endblock title %}
 
+
 {% block content %}
-<h1>Sign-up</h1>
-<br/><br/>
-<form method="post">
-    {% csrf_token %}
-    {% load widget_tweaks %}
+    <div class="wrapper wrapper--w780 font-poppins">
+        <div class="card card-3">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Sign-up</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    {% load widget_tweaks %}
 
-<div class="form-group">
-<!--  first_name is the name by which first name is created in django forms-->
-  {% render_field form.first_name class="form-control" placeholder="Nom(s)" type="text" %}
-</div>
+                    <div class="input-group">
+                        {% render_field form.first_name class='input--style-3' placeholder='Nom(s)' type='text' %}
+                    </div>
 
-<div class="form-group">
-<!--   last_name is the name by which last name is created in django forms-->
-  {% render_field form.last_name type="text" class="form-control" placeholder="Prénom(s)" %}
-</div>
+                    <div class="input-group">
+                        {% render_field form.last_name type='text' class='input--style-3' placeholder='Prénom(s)' %}
+                    </div>
 
-<div class="form-group">
-<!--    username is the default name of username in django forms-->
-  {% render_field form.username type="text" class="form-control" id="exampleInputUsername" placeholder="Nom utilisateur" %}
-</div>
+                    <div class="input-group">
+                        {% render_field form.username type='text' class='input--style-3' id="exampleInputUsername" placeholder="Nom utilisateur" %}
+                    </div>
 
-<div class="form-group">
-<!--   password1 is the default name of password in django forms-->
-  {% render_field form.password1 type="password" class="form-control" id="exampleInputPassword" placeholder="Mot de passe" %}
-</div>
+                    <div class="input-group">
+                        {% render_field form.password1 type="password" class="input--style-3" id="exampleInputPassword" placeholder="Password"%}
+                    </div>
 
-<div class="form-group">
-<!--   password2 is the default name of confirm password in django forms-->
-  {% render_field form.password2 type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmation du mot de passe" %}
-</div>
+                    <div class="input-group">
+                        {% render_field form.password2 type="password" class="input--style-3" id="exampleInputPassword1" placeholder="Confirm password" %}
+                    </div>
 
-<div>
-  <button type="submit" value="Submit" > S'inscrire </button>
-</div>
-</form>
+                    <div class="p-t-10">
+                        <button class="btn1 btn--pill btn--green" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
 
 {% endblock content %}

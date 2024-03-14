@@ -5,8 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db0287a-856c-4517-bfdf-e536dad2dbb8" name="Changes" comment="Notre projet Django">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/41203a06-07a1-4820-9dd7-218b4286ccfa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/41203a06-07a1-4820-9dd7-218b4286ccfa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lezachats.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lezachats.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lezachats/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lezachats/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/0ccStlB6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/20221101_125413.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/20221101_125413_AzbU9Yw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/20221101_125419.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/263760131_308932401235347_1368281543548152869_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/263760131_308932401235347_1368281543548152869_n_SzNf8Ek.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230818-WA0011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230818-WA0011_ZGDOQ0O.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_GeH9ZJ4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_PMUbR5e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_9uMboug.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_cVVbRN0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_mgzs9R0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_p5IIX8Q.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_vK24RPI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230913-WA0026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0009_cv2jRQ7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0014_7n8klJ9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017_8oCcKHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017_mKiRS30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/WIP-9th-anniversary-wallpaper-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/istockphoto-1180260798-170667a_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/megane.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/télécharger.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/members/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/members/templates/registration/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,22 +62,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitLabMergeRequestFiltersHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPENED",
-    "assignee": {
-      "type": "org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue",
-      "username": "jiordikengne",
-      "fullname": "Jiordi Kengne"
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;jiordikengne&quot;,
+      &quot;fullname&quot;: &quot;Jiordi Kengne&quot;
     }
   }
-}]]></component>
-  <component name="GitLabMergeRequestsSettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "first": "https://gitlab.com/jiordikengne/lezachats.git",
-    "second": "e70c4f10-6507-432a-9eb6-99a2aaa149d4"
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.com/jiordikengne/lezachats.git&quot;,
+    &quot;second&quot;: &quot;e70c4f10-6507-432a-9eb6-99a2aaa149d4&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -60,8 +98,9 @@
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiord/Bureau/lezachats/media/images/profile&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiord/Bureau/lezachats/main/static/js&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,7 +111,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jiord\Bureau\lezachats\main\static\js" />
+      <recent name="C:\Users\jiord\Bureau\lezachats\main\static\images" />
+      <recent name="C:\Users\jiord\Bureau\lezachats\main\static\css" />
       <recent name="C:\Users\jiord\Bureau\lezachats\media\images\profile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jiord\Bureau\lezachats\media\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -104,7 +149,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
       </set>
     </attachedChunks>
   </component>
@@ -118,6 +163,7 @@
       <updated>1708514342440</updated>
       <workItem from="1708514349467" duration="348000" />
       <workItem from="1708761458440" duration="88000" />
+      <workItem from="1710389194185" duration="4388000" />
     </task>
     <task id="LOCAL-00001" summary="Notre projet Django">
       <option name="closed" value="true" />
@@ -159,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710352044925</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Notre projet Django">
+      <option name="closed" value="true" />
+      <created>1710383246740</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710383246740</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

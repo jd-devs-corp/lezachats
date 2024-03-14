@@ -10,16 +10,20 @@
     <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
     <script src="{% static 'css/fontawesone.css' %}" crossorigin="anonymous"></script>
-    {% comment %}<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">{% endcomment %}
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    {% comment %}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    {% endcomment %}
     <link rel="icon" href="/media/Logo.png">
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
             rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="{% static 'js/header.js' %}"></script>
     <style>
         .custom-link {
@@ -51,15 +55,23 @@
                     <small><a href="tel:+237682786315">+(237) 6 82 78 63 15</a></small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+   <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button aria-expanded="false"
                 aria-label="Toggle theme (auto)"
                 class="btn btn-light py-2 dropdown-toggle d-flex align-items-center rounded"
@@ -110,7 +122,7 @@
                 </button>
             </li>
         </ul>
-    </div>
+    </div>-->
     <nav class="navbar navbar-expand-lg bg-dark-subtle text-bg-dark navbar-dark sticky-top p-0">
         <a href="" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary"><img src="/media/Logo-removebg-preview.png" alt="logo lezachats" width="37%">
@@ -122,77 +134,84 @@
         <div class=" navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0 text-black">
 
-                <a href="{% url "home" %}" class="nav-item nav-link custom-link">Accueil</a>
+                <a href="{% url 'home' %}" class="nav-item nav-link custom-link">Accueil</a>
                 {% if user.is_authenticated %}
-                    {% if user.is_staff %}
-                        <a href="{% url "admin:index" %}" class="nav-item nav-link custom-link">Administrateur</a>
-                        <a href="{% url "add_cat" %}" class="nav-item nav-link custom-link">Ajout d'une Catégorie</a>
-                        <a href="{% url "verif" %}" class="nav-item nav-link custom-link">Attente</a>
-                        <a href="{% url "profile_page" user.profile.id %}" class="nav-item nav-link custom-link">Mon Profil</a>
-                        <form method="POST" class="nav-item nav-link custom-link" action="{% url 'logout' %}">{% csrf_token %}<button type="submit">Déconnexion</button></form>
+                {% if user.is_staff %}
+                <a href="{% url 'admin:index' %}" class="nav-item nav-link custom-link">Administrateur</a>
+                <a href="{% url 'add_cat' %}" class="nav-item nav-link custom-link">Ajout d'une Catégorie</a>
+                <a href="{% url 'verif' %}" class="nav-item nav-link custom-link">Attente</a>
+                <a href="{% url 'profile_page' user.profile.id %}" class="nav-item nav-link custom-link">Mon Profil</a>
+                <form method="POST" class="nav-item nav-link custom-link" action="{% url 'logout' %}">{% csrf_token %}
+                    <button type="submit">Déconnexion</button>
+                </form>
 
-                    {% else %}
-                        <a href="{% url 'add_art' %}" class="nav-item nav-link custom-link">Ajouter un article</a>
-                        <a href="{% url 'profile_page' user.profile.id %}" class="nav-item nav-link custom-link">Mon Profil</a>
-                        <form method="POST" class="nav-item nav-link custom-link" action="{% url 'logout' %}">{% csrf_token %}<button type="submit">Déconnexion</button></form>
-
-                    {% endif %}
                 {% else %}
-                    <a href="{% url "register" %}" class="nav-item nav-link custom-link">inscrire</a>
-                    <a href="{% url "login" %}" class="nav-item nav-link custom-link">Connexion</a>
+                <a href="{% url 'add_art' %}" class="nav-item nav-link custom-link">Ajouter un article</a>
+                <a href="{% url 'profile_page' user.profile.id %}" class="nav-item nav-link custom-link">Mon Profil</a>
+                <form method="POST" class="nav-item nav-link custom-link" action="{% url 'logout' %}">{% csrf_token %}
+                    <button type="submit">Déconnexion</button>
+                </form>
+
+                {% endif %}
+                {% else %}
+                <a href="{% url 'register' %}" class="nav-item nav-link custom-link">inscrire</a>
+                <a href="{% url 'login' %}" class="nav-item nav-link custom-link">Connexion</a>
                 {% endif %}
 
                 <a href="#" class="nav-item nav-link custom-link">Contact</a>
             </div>
         </div>
     </nav>
-    {% comment %} <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+    {% comment %}
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
 
         <div class="container-fluid ">
 
-            <a class="navbar-brand " href="{% url "home" %}">LeZachats</a>
-            <button class="navbar-toggler " type="button " data-bs-toggle="collapse "
+            <a class="navbar-brand " href="{% url 'home' %}">LeZachats</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse "
                     data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent "
                     aria-expanded="false " aria-label="Toggle navigation ">
                 <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent ">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    {% if  user.is_authenticated %}
-                        {% if user.is_staff %}
-                            <li class="nav-item ">
-                                <a class="nav-link active " aria-current="page "
-                                   href=" {% url "admin:index" %}">Admin</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link active " aria-current="page " href=" {% url "add_cat" %}">Ajouter une
-                                    categorie</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link active " aria-current="page " href=" {% url "verif" %}">Fil
-                                    d'attente</a>
-                            </li>
-                        {% endif %}
-                        <li class="nav-item ">
-                            <a class="nav-link active " aria-current="page " href=" {% url "add_art" %}">Ajouter un
-                                article</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active " aria-current="page " href=" {% url "profile_page" user.id %}">Mon
-                                profil </a>
-                        </li>
+                    {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page "
+                           href=" {% url 'admin:index' %}">Admin</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page" href=" {% url 'add_cat' %}">Ajouter une
+                        categorie</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page" href=" {% url 'verif' %}">Fil
+                        d'attente</a>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page" href=" {% url 'add_art' %}">Ajouter un
+                        article</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page " href=" {% url 'profile_page' user.id %}">Mon
+                        profil </a>
+                    </li>
 
-                        <li class="nav-item ">
-                            <form method="POST" action="{% url 'logout' %}">{% csrf_token %}<button type="submit">Déconnexion</button></form>
+                    <li class="nav-item ">
+                        <form method="POST" action="{% url 'logout' %}">{% csrf_token %}
+                            <button type="submit">Déconnexion</button>
+                        </form>
 
-                        </li>
+                    </li>
                     {% else %}
-                        <li class="nav-item ">
-                            <a class="nav-link active " aria-current="page " href=" {% url "register" %}">S'inscrire</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active " aria-current="page " href=" {% url "login" %}">Se connecter</a>
-                        </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page " href=" {% url 'register' %}">S'inscrire</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page " href=" {% url 'login' %}">Se connecter</a>
+                    </li>
 
                     {% endif %}
 
@@ -200,7 +219,8 @@
 
             </div>
         </div>
-    </nav>{% endcomment %}
+    </nav>
+    {% endcomment %}
 </header>
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
@@ -217,7 +237,8 @@
                 <!-- Content -->
                 <h5 class="text-uppercase font-weight-bold mt-3 mb-4">À propos de notre site web</h5>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
-                <p>Lezachats est une application web developpé un groupe d'étudiants en DUT à l'institut universitaire de
+                <p>Lezachats est une application web developpé un groupe d'étudiants en DUT à l'institut universitaire
+                    de
                     Douala (IUT) .</p>
             </div>
             <hr class="clearfix w-100 d-md-none">
@@ -298,21 +319,23 @@
         </ul>
     </div>
     <!-- Copyright -->
-<div class="footer-copyright text-center py-3" id="copyright">
-            <script>
-                document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-            </script> &copy; Copyright <strong><span>Lezachats</span></strong>. Tous droits reservés
-        </div>
+    <div class="footer-copyright text-center py-3" id="copyright">
+        <script>
+            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+        </script> &copy; Copyright <strong><span>Lezachats</span></strong>. Tous droits reservés
+    </div>
 </footer>
 {% load static %}
+<script src="{% static 'js/jquery.min.js' %}"></script>
 <script src='{% static "js/bootstrap.bundle.min.js" %}'
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        integrity="sha384-7WVX1rOMKD5JTcHkjARDPRJs0m/SuTCzHW+JLWGhu3Wvw/ImxMFaWKSjz12stffk"
         crossorigin="anonymous"></script>
 <script src="{% static 'js/popper.min.js' %}"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="
+https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
