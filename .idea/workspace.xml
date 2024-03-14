@@ -5,47 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db0287a-856c-4517-bfdf-e536dad2dbb8" name="Changes" comment="Notre projet Django">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/41203a06-07a1-4820-9dd7-218b4286ccfa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/41203a06-07a1-4820-9dd7-218b4286ccfa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lezachats.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lezachats.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/0ccStlB6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/20221101_125413.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/20221101_125413_AzbU9Yw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/20221101_125419.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/263760131_308932401235347_1368281543548152869_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/263760131_308932401235347_1368281543548152869_n_SzNf8Ek.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230818-WA0011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230818-WA0011_ZGDOQ0O.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_GeH9ZJ4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_PMUbR5e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_9uMboug.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_cVVbRN0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_WZ0rG6b_mgzs9R0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_p5IIX8Q.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230904-WA0004_vK24RPI.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20230913-WA0026.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0009_cv2jRQ7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0014_7n8klJ9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017_8oCcKHe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/IMG-20231028-WA0017_mKiRS30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/WIP-9th-anniversary-wallpaper-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/istockphoto-1180260798-170667a_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/megane.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/télécharger.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/members/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/members/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/members/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/members/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +125,7 @@
       <updated>1708514342440</updated>
       <workItem from="1708514349467" duration="348000" />
       <workItem from="1708761458440" duration="88000" />
-      <workItem from="1710389194185" duration="4388000" />
+      <workItem from="1710389194185" duration="5979000" />
     </task>
     <task id="LOCAL-00001" summary="Notre projet Django">
       <option name="closed" value="true" />
@@ -213,7 +175,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710383246740</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Notre projet Django">
+      <option name="closed" value="true" />
+      <created>1710394987724</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710394987724</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Notre projet Django">
+      <option name="closed" value="true" />
+      <created>1710395010358</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710395010358</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

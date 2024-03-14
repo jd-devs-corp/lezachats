@@ -8,10 +8,10 @@ class LoginForm(AuthenticationForm):
         model = User
         fields = ('email', 'password')
 
-    def __init__(self, *args, **kwargs):
-        super(LoginForm, self).__init__(*args, **kwargs)
-        self.fields['username'].widget.attrs['class'] = 'form-control'
-        self.fields['password'].widget.attrs['class'] = 'form-control'
+    # def __init__(self, *args, **kwargs):
+    #     super(LoginForm, self).__init__(*args, **kwargs)
+    #     self.fields['username'].widget.attrs['class'] = 'form-control'
+    #     self.fields['password'].widget.attrs['class'] = 'form-control'
 
 
 class SignUpForm(UserCreationForm):
@@ -22,14 +22,14 @@ class SignUpForm(UserCreationForm):
         model = User
         fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2')
 
-    def __init__(self, *args, **kwargs):
-        super(SignUpForm, self).__init__(*args, **kwargs)
-        self.fields['username'].widget.attrs['class'] = 'form-control'
-        self.fields['first_name'].widget.attrs['class'] = 'form-control'
-        self.fields['email'].widget.attrs['class'] = 'form-control'
-        self.fields['last_name'].widget.attrs['class'] = 'form-control'
-        self.fields['password1'].widget.attrs['class'] = 'form-control'
-        self.fields['password2'].widget.attrs['class'] = 'form-control'
+    # def __init__(self, *args, **kwargs):
+    #     super(SignUpForm, self).__init__(*args, **kwargs)
+    #     self.fields['username'].widget.attrs['class'] = 'form-control'
+    #     self.fields['first_name'].widget.attrs['class'] = 'form-control'
+    #     self.fields['email'].widget.attrs['class'] = 'form-control'
+    #     self.fields['last_name'].widget.attrs['class'] = 'form-control'
+    #     self.fields['password1'].widget.attrs['class'] = 'form-control'
+    #     self.fields['password2'].widget.attrs['class'] = 'form-control'
 
     def clean_numero_de_telephone(self):
         numero_de_telephone = self.cleaned_data['numero_de_telephone']
